@@ -15,12 +15,12 @@ $ git push -u origin master   //将本地项目更新到github项目上去
 
 
 
-注意：如果出现fatal: remote origin already exists.这种错误，首先要git remote rm origin，然后再执行git remote add origin git@github.com:defnngj/hello-world.git ，就不会报错了
+（1）注意：如果出现fatal: remote origin already exists.这种错误，首先要git remote rm origin，然后再执行git remote add origin git@github.com:defnngj/hello-world.git ，就不会报错了
 
 
 
 
-若出现$ git push -u origin master
+（2）若出现$ git push -u origin master
 
 To git@github.com:yangchao0718/cocos2d.git
 
@@ -36,7 +36,7 @@ hint: 'git pull ...') before pushing again.
 
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.出现这种错误的原因是：github中的README.md文件不在本地代码目录中，需要先执行git pull --rebase origin master，执行上面代码后可以看到本地代码库中多了README.md文件，此时再执行语句 git push -u origin master即可完成代码上传到github。
 
-若出现git commit -m 'first commit'，上面写Untractracked files:
+（3）若出现git commit -m 'first commit'，上面写Untractracked files:
           缺少的文件
           缺少的文件
           缺少的文件
