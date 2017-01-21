@@ -42,3 +42,12 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.出现
           缺少的文件
           缺少的文件
 此时需要git add 缺少的文件，然后再重新执行。
+
+
+
+//定义16进制的颜色
+#define UIColorFromHEX(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+//使用方法：viewColor = UIColorFromHEX(0x22B573);
